@@ -22,8 +22,8 @@ DATA_DIR = (
     / "data"
 )
 
-gc = gspread.service_account(
-    filename="credentials/d912-498923-cff34531ec87.json"
+gc = gspread.service_account_from_dict(
+    st.secrets["gcp_service_account"]
 )
 
 sheet_db = gc.open(
