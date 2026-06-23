@@ -336,7 +336,7 @@ with col1:
         Instagram
         </h3>
 
-        @D912.cl
+        @decant.912
 
         </div>
         """,
