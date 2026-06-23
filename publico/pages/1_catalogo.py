@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 
 import base64
+
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+
+if str(ROOT) not in sys.path:
+    sys.path.append(str(ROOT))
+	
 def get_base64_image(
     image_path
 ):
